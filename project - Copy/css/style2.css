@@ -1,0 +1,88 @@
+
+/* Gaya untuk memusatkan kotak (box) di tengah */
+#canvas-container {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1;
+}
+
+/* Gaya untuk bayangan pada kotak (box) */
+.tilt-inner {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+
+/* Kode yang sebelumnya... */
+
+/* Gaya untuk keterangan berjalan */
+#caption {
+  opacity: 0;
+  animation: fade-in 1s ease-in-out forwards;
+}
+
+#caption-desc {
+  opacity: 0;
+  animation: slide-in 2s ease-in-out forwards, change-color 5s linear infinite;
+  display: inline-block;
+}
+
+/* Animasi untuk keterangan berjalan */
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes change-color {
+  0%, 100% {
+    color: #ff0000;
+  }
+  50% {
+    color: #00ff00;
+  }
+}
+
+/* Kode sebelumnya... */
+
+/* Gaya untuk animasi tulisan di bagian bawah kotak */
+#animated-text {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0;
+  animation: fade-in 1s ease-in-out 1s forwards;
+}
+
+/* Animasi untuk keterangan berjalan */
+@keyframes fade-in {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slide-in {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes change-color {
+  0%, 100% {
+    color: #ff0000;
+  }
+  50% {
+    color: #00ff00;
+  }
+}
+

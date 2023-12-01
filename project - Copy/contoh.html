@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kenangan Indah</title>
+  <!-- Tautan Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Tautan Tailwind CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+  <!-- Tautan Tilt.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tilt.js/1.2.1/tilt.min.js"></script>
+  <!-- Tautan Three.js -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/110/three.min.js"></script>
+  <!-- Tautan Video -->
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body class="bg-pink-100">
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-indigo-500">
+    <div class="container">
+      <a class="navbar-brand" href="#">Kenangan Indah</a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+              aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#home">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#about">About</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#gallery">Gallery</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#contact">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Content -->
+  <div class="container mt-4">
+    <div class="tilt-inner max-w-md mx-auto bg-white p-4 shadow-lg rounded-lg">
+      <h1 class="text-3xl font-semibold mb-4">Kenangan Indah</h1>
+      <p>
+        Selamat datang di situs Kenangan Indah! Di sini, kami berbagi kenangan-kenangan indah
+        bersama keluarga dan teman-teman. Mari kita lihat beberapa momen spesial dalam galeri
+        kami dan kenanglah saat-saat bahagia bersama.
+      </p>
+      <p>
+        Situs ini menggunakan teknologi Three.js untuk memberikan efek animasi yang menarik,
+        Tailwind CSS untuk tampilan modern, dan Bootstrap untuk menyusun beberapa menu.
+      </p>
+    </div>
+  </div>
+
+  <!-- Content -->
+  <div class="container mt-4">
+    <div class="tilt-inner max-w-md mx-auto bg-white p-4 shadow-lg rounded-lg">
+      <h1 class="text-3xl font-semibold mb-4">Kenangan Indah</h1>
+      <p>
+        Selamat datang di situs Kenangan Indah! Di sini, kami berbagi kenangan-kenangan indah
+        bersama keluarga dan teman-teman. Mari kita lihat beberapa momen spesial dalam galeri
+        kami dan kenanglah saat-saat bahagia bersama.
+      </p>
+      <p>
+        Situs ini menggunakan teknologi Three.js untuk memberikan efek animasi yang menarik,
+        Tailwind CSS untuk tampilan modern, dan Bootstrap untuk menyusun beberapa menu.
+      </p>
+    </div>
+  </div>
+  
+  <!-- Keterangan berjalan -->
+<div class="text-center mt-4">
+  <h2 class="text-2xl font-semibold mb-2" id="caption">Ayo kenang kenangan indah kita!</h2>
+  <p class="text-lg" id="caption-desc"></p>
+</div>
+
+<!-- Animasi tulisan di bagian bawah kotak -->
+<div class="text-center" id="animated-text">
+  <p class="text-xl">Bersama Keluarga & Teman-Teman</p>
+</div>
+
+
+  <!-- Three.js Canvas -->
+  <div class="flex items-center justify-center min-h-screen">
+    <canvas id="canvas"></canvas>
+  </div>
+
+  <!-- Keterangan berjalan -->
+  <div class="text-center mt-4">
+    <h2 class="text-2xl font-semibold mb-2" id="caption">Ayo kenang kenangan indah kita!</h2>
+    <p class="text-lg" id="caption-desc"></p>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
